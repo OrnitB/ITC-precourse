@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html id="indexHTML" lang="en">
+  <head>
+    <title>ITC Precourse - Home</title>
+    <link href="./css/style.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <section>
+      <div>
+        <div class="topnav">
+          <a class="active" href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      <div class="card">
+        <img
+          id="profile-image"
+          onload=fetch(GITHUB_URL)
+          alt="OrnitB"
+          class="profile-image"
+        /><br>
+        <h1 id="myName" onload=fetch(GITHUB_URL)></h1>
+        <h2 id="subTitle">ITC Fullstack Development</h2>
+        <ul>
+          <li type="button" onclick="window.location.href='https://www.linkedin.com/in/ornit-b-00a2b81b8/'">
+            <img
+              id="linkedin"
+              src="./images/LinkedIn_logo.png"
+              width="30px"
+              height="30px"
+            />
+          </li>
+          <li type="button" onclick="window.location.href='https://github.com/OrnitB'">
+            <img
+              id="github"
+              src="./images/github_logo.svg"
+              width="30px"
+              height="30px"
+            />
+          <li type="button" onclick="window.location.href='https://stackoverflow.com/users/16888250/ornit-b?tab=profile'">
+            <img
+              id="stackoverflow"
+              src="./images/stack_logo.png"
+              width="30px"
+              height="30px"
+            />
+          </ul>
+      </div>
+    </section>
+    <footer>
+      <div id="myFooter"></div>
+      <ul id="footerLinks" style="display: flex; justify-content: flex-end;">
+      <li type="button" onclick="window.location.href='https://www.linkedin.com/in/ornit-b-00a2b81b8/'">
+        <img
+          id="linkedin"
+          src="./images/LinkedIn_logo.png"
+          width="30px"
+          height="30px"
+        />
+      </li>
+      <li type="button" onclick="window.location.href='https://github.com/OrnitB'">
+        <img
+          id="github"
+          src="./images/github_logo.svg"
+          width="30px"
+          height="30px"
+        />
+      <li type="button" onclick="window.location.href='https://stackoverflow.com/users/16888250/ornit-b?tab=profile'">
+        <img
+          id="stackoverflow"
+          src="./images/stack_logo.png"
+          width="30px"
+          height="30px"
+        />
+      </ul>
+    </footer>
+  <script src="./js/main.js"></script>
+  <script src="./js/footer.js"></script>
+</body>
+</html>

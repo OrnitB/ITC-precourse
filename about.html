@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html id="aboutHTML" lang="en">
+<head>
+    <title>ITC Precourse - About</title>
+    <link href="./css/style.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section style="padding-top: 50px">
+        <div class="topnav">
+          <a href="index.html">Home</a>
+          <a class="active" href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <p id="aboutText">
+        Hello, my name is Ornit and programming has always been a part of my life and I love it, so I decided to make a career out of it. I have a bachelor degree in Biology and during my studies I took a course in Python and fell in love with the programming world. I love Biology and this field is very much dear to my heart and I will always integrate it in my career somehow, but I've learned that programming is something I enjoy even more and my abilities are being utilized properly in this field. After I finished my degree, I started learning basic C on my own and knew very quickly that this is something I want and I am capable of doing until retirement.
+        </p>
+        <p id="aboutText">
+        So far, I worked as a top sales representative in a health insurace company, branch manager of a clothing store, bartender, waitress and a research assistant.
+        </p>
+        <p id="aboutText">
+        On my spare time I like singing, playing the piano and the guitar, playing video games and writing.
+        </p>
+        <h2 id="maps">Places I have lived:</h2>
+        <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53956.24593695246!2d34.89540750328854!3d32.30472361584737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d400493c075d5%3A0x2cd995be543c3f22!2z16DXqteg15nXlA!5e0!3m2!1siw!2sil!4v1632416988077!5m2!1siw!2sil" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <dev id="mapButtons">
+            <button id="prev" onclick="changeSrc(prev)">Prev</button>
+            <button id="next" onclick="changeSrc(next)">Next</button>
+        </dev>
+    </section>
+    <footer>
+        <div id="myFooter"></div>
+        <ul id="footerLinks" style="display: flex; justify-content: flex-end;">
+        <li type="button" onclick="window.location.href='https://www.linkedin.com/in/ornit-b-00a2b81b8/'">
+          <img
+            id="linkedin"
+            src="./images/LinkedIn_logo.png"
+            width="30px"
+            height="30px"
+          />
+        </li>
+        <li type="button" onclick="window.location.href='https://github.com/OrnitB'">
+          <img
+            id="github"
+            src="./images/github_logo.svg"
+            width="30px"
+            height="30px"
+          />
+        <li type="button" onclick="window.location.href='https://stackoverflow.com/users/16888250/ornit-b?tab=profile'">
+          <img
+            id="stackoverflow"
+            src="./images/stack_logo.png"
+            width="30px"
+            height="30px"
+          />
+        </ul>
+      </footer>
+    <script src="./js/about.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html id="contactHTML"lang="en">
+<head>
+    <title>ITC Precourse - Contact</title>
+    <link href="./css/style.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section>
+        <div class="topnav">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a class="active" href="contact.html">Contact</a>
+        </div>
+    </section>
+    <form id="contactForm" action="https://formspree.io/f/xleazked" method="POST" >
+        <label>First name:
+            <input type="text" id="fname" name="fname" placeholder="required" required><br>
+        </label>
+        <label>Last name:
+            <input type="text" id="lname" name="lname"><br>
+        </label>
+        <label>Your email:
+            <input type="email" id="email" name="_replyto" placeholder="required" required><br>
+        </label>
+        <label>Your message:
+            <textarea id="messageBox" name="message" placeholder="required" required></textarea><br>
+        </label>
+        <h3 style="margin-bottom: -2px">I am a...</h3> 
+        <input type="radio" id="iAm" name="Occupation" value="Student" required>
+        <label for="Occupation">Student</label><br>
+        <input type="radio" id="iAm" name="Occupation" value="Researcher">
+        <label for="Occupation">Researcher</label><br>
+        <input type="radio" id="iAm" name="Occupation" value="Software Developer">
+        <label for="Occupation">Software Developer</label><br>
+        <input type="radio" id="iAm" name="Occupation" value="Other">
+        <label for="Occupation">Other</label><br>
+        <button id="submitButton" type="submit">Submit</button>
+    </form>
+    <footer>
+        <div id="myFooter"></div>
+        <ul id="footerLinks" style="display: flex; justify-content: flex-end;">
+        <li type="button" onclick="window.location.href='https://www.linkedin.com/in/ornit-b-00a2b81b8/'">
+          <img
+            id="linkedin"
+            src="./images/LinkedIn_logo.png"
+            width="30px"
+            height="30px"
+          />
+        </li>
+        <li type="button" onclick="window.location.href='https://github.com/OrnitB'">
+          <img
+            id="github"
+            src="./images/github_logo.svg"
+            width="30px"
+            height="30px"
+          />
+        <li type="button" onclick="window.location.href='https://stackoverflow.com/users/16888250/ornit-b?tab=profile'">
+          <img
+            id="stackoverflow"
+            src="./images/stack_logo.png"
+            width="30px"
+            height="30px"
+          />
+        </ul>
+      </footer>
+    <script src="./js/main.js"></script>
+    <script src="./js/footer.js"></script>
+</body>
+</html>
